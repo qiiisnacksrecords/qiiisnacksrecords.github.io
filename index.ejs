@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% for (const c in htmlWebpackPlugin.files.chunks) { %>
+    <link rel="preload" href="<%= htmlWebpackPlugin.files.chunks[c].entry %>" as="script">
+  <% } %>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimal-ui">
+
+  <title>Qiii Snacks Records</title>
+</head>
+<body>
+</body>
+</html>

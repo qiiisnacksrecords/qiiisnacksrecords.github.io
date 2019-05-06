@@ -72,6 +72,10 @@ module.exports = (env, { mode }) => {
           test: /\.(less|css)$/,
           exclude: [ path.resolve(__dirname, 'src') ],
           use: extractor(isDev, false)
+        },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: 'file-loader'
         }
       ]
     },

@@ -1,8 +1,15 @@
 /** @jsx h */
-import { h, render } from 'preact'
+import { h } from 'preact'
+import { Router } from 'preact-router'
+import { Welcome, Home } from './components'
+
+import './styles.less'
 
 const App = () => (
-  <main>Hello, world!</main>
+  <Router>
+    <Welcome path='/' />
+    <Home path='/home/:page?' />
+  </Router>
 )
 
 export default App

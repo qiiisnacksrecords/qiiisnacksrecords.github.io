@@ -1,17 +1,24 @@
 /** @jsx h */
-import { h } from 'preact'
+import { h, Component } from 'preact'
 import Header from './header'
 import Menu from './menu'
 import styles from './home.less'
+import createStore from '../vendor/store'
 
-const Home = () => (
-  <main class={styles.home}>
-    <Header />
-    <Menu />
-    <section class={styles.main}>
-      This is a main section
-    </section>
-  </main>
-)
+export default class Home extends Component {
+  componentDidMount () {
+    createStore()
+  }
 
-export default Home
+  render () {
+    return (
+      <main class={styles.home}>
+        <Header />
+        <Menu />
+        <section class={styles.main}>
+          <h1>Under active development :D</h1>
+        </section>
+      </main>
+    )
+  }
+}

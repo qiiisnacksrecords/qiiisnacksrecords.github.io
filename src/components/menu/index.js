@@ -15,9 +15,9 @@ const Menu = () => (
       </li>
 
       <li>
-        <Link href='#'>BANDCAMP</Link>
-        <br /><Link href='#'>DOUBAN</Link>
-        <br /><Link href='#'>FB</Link>
+        <a href='https://qiiisnacksrecords.bandcamp.com'>BANDCAMP</a>
+        <br /><a href='https://site.douban.com/QSR'>DOUBAN</a>
+        <br /><a href='https://www.facebook.com/QiiiSR'>FB</a>
       </li>
     </ul>
   </main>
